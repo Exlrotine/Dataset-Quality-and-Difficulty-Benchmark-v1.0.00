@@ -1,0 +1,18 @@
+{
+  "name": "1",
+  "data_dir": "../dataset",
+  "split_json": "splits.json",
+  "model": "GNNModule",
+  "model_args": { "num_classes": 26,"in_feats":20, "hidden": 128},
+  "train_ratio": 0.8,
+  "random_label": false,
+  "shuffle_ratio": 0.0,
+  "batch_size": 16,
+  "lr": 3e-3,
+  "weight_decay": 1e-5,
+  "epochs": 100,
+  "patience": 100,
+  "val_freq": 1,
+  "seed": 42,
+  "scheduler": { "step": 40, "gamma": 0.6 }
+}
